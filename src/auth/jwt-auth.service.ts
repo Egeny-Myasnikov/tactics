@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
-import { CoachLean } from '@/coach/entities/coach.entity'
-import { StudentLean } from '@/student/entities/student.entity'
+import { CoachLean } from '../coach/entities/coach.entity'
+import { StudentLean } from '../student/entities/student.entity'
 
 @Injectable()
 export class CoachJwtAuthService {

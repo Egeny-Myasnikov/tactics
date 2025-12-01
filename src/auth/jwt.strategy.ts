@@ -2,10 +2,10 @@ import { Injectable, UnauthorizedException } from '@nestjs/common'
 import { ConfigService } from '@nestjs/config'
 import { PassportStrategy } from '@nestjs/passport'
 import { ExtractJwt, Strategy } from 'passport-jwt'
-import { CoachService } from '@/coach/coach.service'
-import { CoachLean } from '@/coach/entities/coach.entity'
-import { StudentService } from '@/student/student.service'
-import { StudentLean } from '@/student/entities/student.entity'
+import { CoachService } from '../coach/coach.service'
+import { CoachLean } from '../coach/entities/coach.entity'
+import { StudentService } from '../student/student.service'
+import { StudentLean } from '../student/entities/student.entity'
 
 @Injectable()
 export class CoachJwtStrategy extends PassportStrategy(Strategy) {

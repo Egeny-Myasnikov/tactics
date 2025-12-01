@@ -1,10 +1,10 @@
-import { CoachModule } from '@/coach/coach.module'
-import { StudentModule } from '@/student/student.module'
 import { Module } from '@nestjs/common'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { JwtModule } from '@nestjs/jwt'
 import { CoachJwtAuthService, StudentJwtAuthService } from './jwt-auth.service'
 import { CoachJwtStrategy, StudentJwtStrategy } from './jwt.strategy'
+import { CoachModule } from '../coach/coach.module'
+import { StudentModule } from '../student/student.module'
 
 @Module({
 	imports: [

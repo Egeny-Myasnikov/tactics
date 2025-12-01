@@ -1,10 +1,10 @@
-import { JwtAuthModule } from '@/auth/jwt-auth.module'
-import { CookieUtils } from '@/utils/cookie.utils'
 import { forwardRef, Module } from '@nestjs/common'
 import { MongooseModule } from '@nestjs/mongoose'
 import { CoachController } from './coach.controller'
 import { CoachService } from './coach.service'
 import { Coach, CoachSchema } from './entities/coach.entity'
+import { JwtAuthModule } from '../auth/jwt-auth.module'
+import { CookieUtils } from '../utils/cookie.utils'
 
 @Module({
 	imports: [

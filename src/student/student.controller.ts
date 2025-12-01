@@ -1,5 +1,3 @@
-import { JwtAuthGuard } from '@/auth/jwt-auth.guard'
-import { CookieUtils } from '@/utils/cookie.utils'
 import {
 	Body,
 	Controller,
@@ -16,6 +14,8 @@ import { StudentJwtAuthService } from '../auth/jwt-auth.service'
 import { RegisterStudentDto } from './dto/register.dto'
 import { UpdateStudentDto } from './dto/update.dto'
 import { StudentService } from './student.service'
+import { CookieUtils } from '../utils/cookie.utils'
+import { JwtAuthGuard } from '../auth/jwt-auth.guard'
 
 @Controller('student')
 export class StudentController {

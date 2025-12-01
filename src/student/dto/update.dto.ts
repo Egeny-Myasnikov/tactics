@@ -1,8 +1,8 @@
-import { SpecializationEnum } from '@/constants/specializations.enum'
 import { PartialType } from '@nestjs/mapped-types'
 import { Type } from 'class-transformer'
 import { IsArray, IsDate, IsEnum, IsOptional, IsString } from 'class-validator'
 import { RegisterStudentDto } from './register.dto'
+import { SpecializationEnum } from '../../constants/specializations.enum'
 
 export class UpdateStudentDto extends PartialType(RegisterStudentDto) {
 	@IsOptional()

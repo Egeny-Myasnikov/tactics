@@ -9,7 +9,7 @@ import {
 	IsString,
 } from 'class-validator'
 import { RegisterCoachDto } from './register.dto'
-import { SpecializationEnum } from '@/constants/specializations.enum'
+import { SpecializationEnum } from '../../constants/specializations.enum'
 
 export class UpdateCoachDto extends PartialType(RegisterCoachDto) {
 	@IsOptional()

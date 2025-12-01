@@ -1,4 +1,3 @@
-import { normalizePhoneNumber } from '@/utils/phone.utils'
 import {
 	ConflictException,
 	Injectable,
@@ -10,6 +9,7 @@ import { Model } from 'mongoose'
 import { RegisterStudentDto } from './dto/register.dto'
 import { UpdateStudentDto } from './dto/update.dto'
 import { Student, StudentLean } from './entities/student.entity'
+import { normalizePhoneNumber } from '../utils/phone.utils'
 
 @Injectable()
 export class StudentService {

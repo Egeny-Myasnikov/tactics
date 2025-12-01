@@ -1,7 +1,7 @@
-import { RoleEnum } from '@/constants/roles.enum'
-import { SpecializationEnum } from '@/constants/specializations.enum'
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
 import { Document, Types } from 'mongoose'
+import { RoleEnum } from '../../constants/roles.enum'
+import { SpecializationEnum } from '../../constants/specializations.enum'
 
 export interface StudentLean {
 	_id: Types.ObjectId
