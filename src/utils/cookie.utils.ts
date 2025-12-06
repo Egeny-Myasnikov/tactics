@@ -12,10 +12,9 @@ export class CookieUtils {
 
 		return {
 			httpOnly: true,
-			secure: isProduction,
-			sameSite: isProduction ? 'none' : ('lax' as const),
+			secure: true,
+			sameSite: 'none' as const,
 			maxAge: maxAgeDays * 24 * 60 * 60 * 1000,
-			domain: isProduction ? this.configService.get('COOKIE_DOMAIN') : null,
 		} as CookieOptions
 	}
 }
