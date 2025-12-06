@@ -8,7 +8,7 @@ export class CookieUtils {
 
 	getCookieOptions(maxAgeDays: number = 7) {
 		const isProduction =
-			this.configService.getOrThrow('NODE_ENV') === 'production'
+			this.configService.getOrThrow<string>('NODE_ENV') === 'production'
 
 		return {
 			httpOnly: true,
