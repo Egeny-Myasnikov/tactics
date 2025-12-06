@@ -15,7 +15,7 @@ export class CookieUtils {
 			secure: isProduction,
 			sameSite: isProduction ? 'none' : ('lax' as const),
 			maxAge: maxAgeDays * 24 * 60 * 60 * 1000,
-			domain: this.configService.get('COOKIE_DOMAIN'),
+			domain: isProduction ? this.configService.get('COOKIE_DOMAIN') : null,
 		} as CookieOptions
 	}
 }
