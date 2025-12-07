@@ -15,6 +15,7 @@ export class CookieUtils {
 			secure: true,
 			sameSite: 'none',
 			maxAge: maxAgeDays * 24 * 60 * 60 * 1000,
+			domain: 'localhost',
 		} as CookieOptions
 	}
 }
