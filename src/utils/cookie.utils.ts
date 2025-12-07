@@ -11,9 +11,9 @@ export class CookieUtils {
 			this.configService.getOrThrow<string>('NODE_ENV') === 'production'
 
 		return {
-			httpOnly: false,
+			httpOnly: true,
 			secure: false,
-			sameSite: 'none',
+			sameSite: 'lax',
 			maxAge: maxAgeDays * 24 * 60 * 60 * 1000,
 			path: '/',
 		} as CookieOptions
