@@ -12,8 +12,8 @@ export class CookieUtils {
 
 		return {
 			httpOnly: true,
-			secure: true,
-			sameSite: 'none' as const,
+			secure: false,
+			sameSite: 'lax',
 			maxAge: maxAgeDays * 24 * 60 * 60 * 1000,
 		} as CookieOptions
 	}
