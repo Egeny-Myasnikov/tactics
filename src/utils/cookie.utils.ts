@@ -12,10 +12,10 @@ export class CookieUtils {
 
 		return {
 			httpOnly: false,
-			secure: true,
+			secure: false,
 			sameSite: 'none',
 			maxAge: maxAgeDays * 24 * 60 * 60 * 1000,
-			domain: 'localhost',
+			path: '/',
 		} as CookieOptions
 	}
 }
